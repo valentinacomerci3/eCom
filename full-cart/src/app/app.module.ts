@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CoreModule } from './core/core.module';
 
 
+
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductsRoutingModule } from './features/products/products-routing.module';
+
 
 
 
@@ -15,12 +18,15 @@ import { ProductsRoutingModule } from './features/products/products-routing.modu
 
 
 
+
   ],
   imports: [
     BrowserModule,
     CoreModule,
     AppRoutingModule,
-    
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
