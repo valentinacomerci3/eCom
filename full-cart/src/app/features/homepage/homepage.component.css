@@ -1,0 +1,10 @@
+*{
+  height:480px;
+  background-image: url("https://i.pinimg.com/564x/e9/16/e4/e916e4f94b2ba18f9eef28ab19a4aa13.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p{
+  margin-top: 15px;
+}
