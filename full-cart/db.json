@@ -2,17 +2,77 @@
   "users": [
     {
       "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
+      "name": "Jane Mary",
+      "lastname": "Doey",
+      "joined": "May,2019"
     }
   ],
   "products": [
     {
       "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 2,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 3,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 4,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id":5,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 6,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 7,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 8,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 9,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 10,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
+    },
+    {
+      "id": 11,
+      "title": "Subway",
+      "price": 32.5,
+      "material": "Acrylic"
     }
   ]
 }
