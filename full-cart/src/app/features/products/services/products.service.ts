@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { User } from 'src/app/User';
-import {USERS} from 'src/app/mock-users'
+import { Product } from 'src/app/Product';
+
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -13,13 +13,13 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class ProductsService {
   private apiUrl = 'http://localhost:5000/users';
 
   constructor(private http: HttpClient) {}
 
-  getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(this.apiUrl);
+  getProducts(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.apiUrl);
   }
 
 }

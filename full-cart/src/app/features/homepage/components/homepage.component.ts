@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/User';
+import { UserService } from '../../profile/services/user.service';
 
 @Component({
   selector: 'app-homepage',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  users: User[] = [];
+ 
 
-  constructor() { }
+  constructor(private userService: UserService) {}
 
   ngOnInit(): void {
+    this.userService.getUsers().subscribe((users) => (this.users = users));
   }
 
 }

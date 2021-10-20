@@ -4,6 +4,7 @@
       "id": 1,
       "name": "Jane Mary",
       "lastname": "Doey",
+      "address": "202,Main St",
       "joined": "May,2019"
     }
   ],
@@ -12,67 +13,50 @@
       "id": 1,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     },
     {
       "id": 2,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     },
     {
       "id": 3,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     },
     {
       "id": 4,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     },
     {
       "id":5,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     },
     {
       "id": 6,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     },
     {
       "id": 7,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     },
     {
       "id": 8,
       "title": "Subway",
       "price": 32.5,
-      "material": "Acrylic"
-    },
-    {
-      "id": 9,
-      "title": "Subway",
-      "price": 32.5,
-      "material": "Acrylic"
-    },
-    {
-      "id": 10,
-      "title": "Subway",
-      "price": 32.5,
-      "material": "Acrylic"
-    },
-    {
-      "id": 11,
-      "title": "Subway",
-      "price": 32.5,
-      "material": "Acrylic"
+      "description": "Acrylic"
     }
+
   ]
 }
