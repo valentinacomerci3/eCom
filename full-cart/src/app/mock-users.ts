@@ -6,6 +6,6 @@ export const USERS: User[] = [
     name: 'Jane',
     lastname: 'Doe',
     joined: "may,10",
-    address: "202 Main St"
+    address: "202 Main"
   }
 ];

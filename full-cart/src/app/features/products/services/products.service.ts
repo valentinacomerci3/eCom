@@ -14,7 +14,7 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class ProductsService {
-  private apiUrl = 'http://localhost:5000/users';
+  private apiUrl = 'http://localhost:5000/products';
 
   constructor(private http: HttpClient) {}
 

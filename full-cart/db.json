@@ -8,41 +8,43 @@
       "joined": "May,2019"
     }
   ],
+
+
   "products": [
     {
       "id": 1,
       "title": "Subway",
-      "price": 32.5,
+      "price": 18.5,
       "description": "Acrylic"
     },
     {
       "id": 2,
       "title": "Subway",
       "price": 32.5,
-      "description": "Acrylic"
+      "description": "Wood"
     },
     {
       "id": 3,
       "title": "Subway",
-      "price": 32.5,
-      "description": "Acrylic"
+      "price": 41.5,
+      "description": "XXL Cotton"
     },
     {
       "id": 4,
       "title": "Subway",
-      "price": 32.5,
-      "description": "Acrylic"
+      "price": 54.5,
+      "description": "Resina"
     },
     {
       "id":5,
       "title": "Subway",
-      "price": 32.5,
+      "price": 28.5,
       "description": "Acrylic"
     },
     {
       "id": 6,
       "title": "Subway",
-      "price": 32.5,
+      "price": 20.5,
       "description": "Acrylic"
     },
     {
