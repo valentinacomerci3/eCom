@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/User';
+import {USERS} from 'src/app/mock-users'
 
 const httpOptions = {
   headers: new HttpHeaders({

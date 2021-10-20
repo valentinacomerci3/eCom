@@ -3,4 +3,5 @@ export interface User {
   name: string;
   lastname: string;
   joined: string;
+  address:string;
 }
