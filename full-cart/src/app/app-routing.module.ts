@@ -18,7 +18,13 @@ const routes:Routes=[{
 {
   path: 'cart',
   loadChildren: () => import('./features/cart/cart.module').then(m => m.CartModule)
-}];
+},
+{
+  path: 'profile',
+  loadChildren: () => import('./features/profile/profile.module').then(m => m.ProfileModule)
+},
+{path:'',redirectTo:'homepage', pathMatch: 'full' },
+];
 
 @NgModule({
   declarations: [],

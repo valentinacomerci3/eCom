@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CheckoutComponent } from './checkout.component';
+import { CheckoutComponent } from './components/checkout.component';
 import { CheckoutRoutingModule } from './checkout-routing.module';
 
 
