@@ -5,6 +5,7 @@
         <app-singleproduct
         *ngFor="let product of products"
         [product]="product"
+        (add)= "addProductToCart($event)"
 
       ></app-singleproduct>
       </div>

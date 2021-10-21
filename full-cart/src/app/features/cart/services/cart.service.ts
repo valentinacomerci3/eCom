@@ -16,18 +16,18 @@ const httpOptions = {
 })
 export class CartService {
 
-  items: Product[] = [];
+  items: CartProduct[] = [];
   private apiUrl = 'http://localhost:5000/cartproducts';
 
   constructor(private http: HttpClient){}
 
-  addToCart(product: Product) {
-    this.items.push(product);
-  }
-  
-  getCartProducts(): Observable<CartProduct[]> {
-    return this.http.get<CartProduct[]>(this.apiUrl);
-  }
+  // addToCart(cartproduct: CartProduct) : Observable<CartProduct>{
+  //   return this.http.post<CartProduct>(this.apiUrl, cartproduct, httpOptions);
+  // }
+
+  // getCartProducts(): Observable<CartProduct[]> {
+  //   return this.http.get<CartProduct[]>(this.apiUrl);
+  // }
 
 
 }
