@@ -13,51 +13,59 @@
   "products": [
     {
       "id": 1,
-      "title": "Subway",
+      "title": "Train",
       "price": 18.5,
-      "description": "Acrylic"
+      "description": "Acrylic",
+      "img": "https://i.pinimg.com/564x/76/ed/68/76ed6861f8b9b7e4a795c16333fc1729.jpg"
     },
     {
       "id": 2,
-      "title": "Subway",
+      "title": "Trolley",
       "price": 32.5,
-      "description": "Wood"
+      "description": "Wood",
+      "img": "https://i.pinimg.com/474x/c3/c8/8e/c3c88e4fb7847a422ecaa837e9f59049.jpg"
     },
     {
       "id": 3,
-      "title": "Subway",
+      "title": "Train",
       "price": 41.5,
-      "description": "XXL Cotton"
+      "description": "XXL Cotton",
+      "img": "https://i.pinimg.com/564x/76/ed/68/76ed6861f8b9b7e4a795c16333fc1729.jpg"
     },
     {
       "id": 4,
-      "title": "Subway",
+      "title": "Trolley",
       "price": 54.5,
-      "description": "Resina"
+      "description": "Resina",
+      "img":"https://i.pinimg.com/474x/c3/c8/8e/c3c88e4fb7847a422ecaa837e9f59049.jpg"
     },
     {
       "id":5,
-      "title": "Subway",
+      "title": "Gap",
       "price": 28.5,
-      "description": "Acrylic"
+      "description": "Acrylic",
+      "img":"https://i.pinimg.com/564x/ee/4a/b1/ee4ab1f7f16934a97e529cb9e45d19a8.jpg"
     },
     {
       "id": 6,
-      "title": "Subway",
+      "title": "Field",
       "price": 20.5,
-      "description": "Acrylic"
+      "description": "Acrylic",
+      "img":"https://i.pinimg.com/564x/e8/54/04/e8540414017a0a7e204d5cbbe41b5c4d.jpg"
     },
     {
       "id": 7,
-      "title": "Subway",
+      "title": "Steps",
       "price": 32.5,
-      "description": "Acrylic"
+      "description": "Acrylic",
+      "img":"https://i.pinimg.com/474x/0e/11/c2/0e11c26d3ed0bcd0d63a27d8bcaa51e0.jpg"
     },
     {
       "id": 8,
-      "title": "Subway",
+      "title": "Shade",
       "price": 32.5,
-      "description": "Acrylic"
+      "description": "Acrylic",
+      "img":"https://i.pinimg.com/474x/50/60/03/506003e78283edf67c5b6ebaef60f41c.jpg"
     }
 
   ]
