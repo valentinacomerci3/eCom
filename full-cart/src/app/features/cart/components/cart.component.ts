@@ -11,28 +11,53 @@ import { Subscription } from 'rxjs';
 export class CartComponent implements OnInit {
   cartproducts!: Product[];
   grandTotal!:number;
-  subscription2!: Subscription;
+  afterShipng!:number;
+  sFee=5;
+  //subscription2!: Subscription;
 
   constructor(private cartService: CartService) {
-    this.subscription2=this.cartService.onResult().subscribe(value=> this.grandTotal=value)
+    //this.subscription2=this.cartService.onResult().subscribe(value=> this.grandTotal=value)
 
+  }
+
+  getGrandT():number{
+    const reducer = (previousValue: any, currentValue: any) => previousValue + currentValue;
+    this.grandTotal=(this.cartproducts.map((a)=>a.price)).reduce(reducer)
+    return this.grandTotal
   }
 
   ngOnInit(): void {
     this.cartproducts=this.cartService.items
+    this.grandTotal=this.getGrandT()
+    this.afterShipng= this.grandTotal + this.sFee
+
   }
 
   deleteFromCart(prdct:Product){
+
+    if (this.cartproducts===[]){
+      this.grandTotal=0
+    this.afterShipng= 5
+    } else
 
     this.cartService.items.map((a:any, index:any)=>{
       if(prdct.id=== a.id){
         this.cartService.items.splice(index,1);
       }
     })
+
     this.cartService.bfCount()
+
+    this.grandTotal=this.getGrandT()
+    this.afterShipng= this.grandTotal + this.sFee
+
+
+
   }
 
-  
+
+
+
 
 
 }

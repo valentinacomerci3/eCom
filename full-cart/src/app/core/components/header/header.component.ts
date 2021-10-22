@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  showIncrem!: number;
+  showIncrem: number=0;
   subscription!: Subscription;
 
   constructor(private cartService: CartService, ) {

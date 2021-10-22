@@ -29,21 +29,22 @@ export class CartService {
     return this.subject.asObservable();
   }
 
-  getTotalPrice() : void{
 
-  //let pricearr=this.items.map((a)=> a.price);
+  // not using this
+
+  getTotalPrice() : void{
 
   //test to see if value is stored and passed
   this.grandTotal=this.items.length;
   this.subject2.next(this.grandTotal)
 
-  //it does but then it doesnt show
+  //it does but then it doesnt show sigh
 }
 
   onResult(): Observable<any>{
     return this.subject2.asObservable();
   }
 
-  
+
 
 }
