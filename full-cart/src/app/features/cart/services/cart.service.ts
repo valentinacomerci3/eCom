@@ -1,33 +1,27 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { CartProduct } from 'src/app/CartProduct';
 import { Product } from 'src/app/Product';
+import { Observable,Subject } from 'rxjs';
 
-
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/json',
-  }),
-};
 
 @Injectable({
   providedIn: 'root',
 })
 export class CartService {
 
-  items: CartProduct[] = [];
-  private apiUrl = 'http://localhost:5000/cartproducts';
+  private prodIncrem: number= 0;
+  private subject = new Subject<any>();
 
-  constructor(private http: HttpClient){}
+  items: Product[] = [];
 
-  // addToCart(cartproduct: CartProduct) : Observable<CartProduct>{
-  //   return this.http.post<CartProduct>(this.apiUrl, cartproduct, httpOptions);
-  // }
+  constructor(){}
 
-  // getCartProducts(): Observable<CartProduct[]> {
-  //   return this.http.get<CartProduct[]>(this.apiUrl);
-  // }
+  bfCount():void{
+    this.prodIncrem= this.items.length;
+    this.subject.next(this.prodIncrem)
+  }
 
+  onCount(): Observable<any>{
+    return this.subject.asObservable();
+  }
 
 }

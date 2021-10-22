@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CartProduct } from 'src/app/CartProduct';
+import { CartService } from 'src/app/features/cart/services/cart.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +8,15 @@ import { CartProduct } from 'src/app/CartProduct';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  cartproducts : CartProduct[] =[];
+  showIncrem!: number;
+  subscription!: Subscription;
 
-  constructor() { }
+  constructor(private cartService: CartService, ) {
+    this.subscription=this.cartService.onCount().subscribe(value=> this.showIncrem=value)
+  }
 
   ngOnInit(): void {
+
   }
 
 }

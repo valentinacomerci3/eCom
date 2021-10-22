@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/User';
-import {USERS} from 'src/app/mock-users'
 import { faTasks } from '@fortawesome/free-solid-svg-icons';
 import { UserService } from '../services/user.service';
 

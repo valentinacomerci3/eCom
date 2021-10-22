@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CartProduct } from 'src/app/CartProduct';
 
+import { Product } from 'src/app/Product';
 @Component({
   selector: 'app-singlecp',
   templateUrl: './singlecp.component.html',
@@ -8,7 +8,7 @@ import { CartProduct } from 'src/app/CartProduct';
 })
 export class SinglecpComponent implements OnInit {
 
-  @Input()cartproduct!: CartProduct;
+  @Input()cartproduct!: Product;
 
   constructor() { }
 

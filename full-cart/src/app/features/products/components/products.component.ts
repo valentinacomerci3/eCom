@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../services/products.service';
 import { Product } from 'src/app/Product';
 import { CartService } from '../../cart/services/cart.service';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -11,14 +12,20 @@ import { CartService } from '../../cart/services/cart.service';
 })
 export class ProductsComponent implements OnInit {
   products: Product[] = [];
-  constructor(private productsService: ProductsService,private cartService: CartService) {}
+  showIncrem!: number;
+  subscription!: Subscription;
+
+  constructor(private productsService: ProductsService,private cartService: CartService, ) {
+    this.subscription=this.cartService.onCount().subscribe(value=> this.showIncrem=value)
+  }
 
   ngOnInit(): void {
     this.productsService.getProducts().subscribe((products) => (this.products = products));
   }
 
   addProductToCart(item:Product){
-    this.cartService.items.push(item)
+    this.cartService.items.push(item);
+    this.cartService.bfCount();
   }
 
 }

@@ -68,23 +68,6 @@
       "img":"https://i.pinimg.com/474x/50/60/03/506003e78283edf67c5b6ebaef60f41c.jpg"
     }
 
-  ],
-
-  
-  "cartproducts": [
-    {
-      "id": 7,
-      "title": "Steps",
-      "price": 32.5,
-      "description": "Acrylic",
-      "img":"https://i.pinimg.com/474x/0e/11/c2/0e11c26d3ed0bcd0d63a27d8bcaa51e0.jpg"
-    },
-    {
-      "id": 8,
-      "title": "Shade",
-      "price": 32.5,
-      "description": "Acrylic",
-      "img":"https://i.pinimg.com/474x/50/60/03/506003e78283edf67c5b6ebaef60f41c.jpg"
-    }
   ]
+
 }
