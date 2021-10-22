@@ -15,6 +15,7 @@ export class CartComponent implements OnInit {
 
   constructor(private cartService: CartService) {
     this.subscription2=this.cartService.onResult().subscribe(value=> this.grandTotal=value)
+
   }
 
   ngOnInit(): void {
@@ -22,17 +23,16 @@ export class CartComponent implements OnInit {
   }
 
   deleteFromCart(prdct:Product){
+
     this.cartService.items.map((a:any, index:any)=>{
       if(prdct.id=== a.id){
         this.cartService.items.splice(index,1);
       }
     })
+    this.cartService.bfCount()
   }
 
-  removeAllCart(){
-    this.cartService.items = []
-
-  }
+  
 
 
 }
