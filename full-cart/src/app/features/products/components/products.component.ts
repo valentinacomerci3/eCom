@@ -26,6 +26,7 @@ export class ProductsComponent implements OnInit {
   addProductToCart(item:Product){
     this.cartService.items.push(item);
     this.cartService.bfCount();
+    this.cartService.getTotalPrice();
   }
 
 }

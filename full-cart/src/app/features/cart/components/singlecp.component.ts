@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 import { Product } from 'src/app/Product';
 @Component({
@@ -9,10 +9,15 @@ import { Product } from 'src/app/Product';
 export class SinglecpComponent implements OnInit {
 
   @Input()cartproduct!: Product;
+  @Output() del: EventEmitter<Product> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  deleteScp(cartproduct:Product){
+  this.del.emit(cartproduct)
   }
 
 }
