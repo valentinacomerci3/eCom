@@ -13,46 +13,42 @@ export class CartComponent implements OnInit {
   grandTotal!:number;
   afterShipng!:number;
   sFee=5;
-  //subscription2!: Subscription;
+  subscription2!: Subscription;
+  showTotal:number=0
 
-  constructor(private cartService: CartService) {
-    //this.subscription2=this.cartService.onResult().subscribe(value=> this.grandTotal=value)
-
+    //this is pointless unless I get observable/subscription to work
+  constructor(private cartService: CartService, ) {
+    this.subscription2=this.cartService.onSum().subscribe(value=> this.showTotal=value)
   }
 
-  getGrandT():number{
-    const reducer = (previousValue: any, currentValue: any) => previousValue + currentValue;
-    this.grandTotal=(this.cartproducts.map((a)=>a.price)).reduce(reducer)
-    return this.grandTotal
-  }
 
   ngOnInit(): void {
     this.cartproducts=this.cartService.items
-    this.grandTotal=this.getGrandT()
+    this.grandTotal=this.cartService.getTotalPrice()
     this.afterShipng= this.grandTotal + this.sFee
-
   }
 
   deleteFromCart(prdct:Product){
 
-    if (this.cartproducts===[]){
+    if (this.cartproducts.length==1){
+      this.mapAndSplice(prdct);
       this.grandTotal=0
-    this.afterShipng= 5
+      this.afterShipng= 5
     } else
+    this.mapAndSplice(prdct);
 
+    this.cartService.bfCount()
+
+    this.grandTotal=this.cartService.getTotalPrice()
+    this.afterShipng= this.grandTotal + this.sFee
+  }
+
+  mapAndSplice(prdct:Product){
     this.cartService.items.map((a:any, index:any)=>{
       if(prdct.id=== a.id){
         this.cartService.items.splice(index,1);
       }
     })
-
-    this.cartService.bfCount()
-
-    this.grandTotal=this.getGrandT()
-    this.afterShipng= this.grandTotal + this.sFee
-
-
-
   }
 
 

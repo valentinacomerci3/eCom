@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CheckoutComponent } from './components/checkout.component';
 import { CheckoutRoutingModule } from './checkout-routing.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -9,7 +10,9 @@ import { CheckoutRoutingModule } from './checkout-routing.module';
     CheckoutComponent
   ],
   imports: [
-    CheckoutRoutingModule
+    CheckoutRoutingModule,
+    CommonModule,
+    FormsModule
   ]
 })
 export class CheckoutModule { }

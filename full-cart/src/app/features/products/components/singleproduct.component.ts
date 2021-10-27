@@ -13,7 +13,7 @@ export class SingleproductComponent implements OnInit {
   @Input()product!: Product;
   @Output() add: EventEmitter<Product> = new EventEmitter();
 
-  constructor(private cartService: CartService) { }
+  constructor() { }
 
   ngOnInit():void {
   }

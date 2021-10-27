@@ -8,8 +8,6 @@
       "joined": "May,2019"
     }
   ],
-
-
   "products": [
     {
       "id": 1,
@@ -37,37 +35,56 @@
       "title": "Trolley",
       "price": 54.5,
       "description": "Resina",
-      "img":"https://i.pinimg.com/474x/c3/c8/8e/c3c88e4fb7847a422ecaa837e9f59049.jpg"
+      "img": "https://i.pinimg.com/474x/c3/c8/8e/c3c88e4fb7847a422ecaa837e9f59049.jpg"
     },
     {
-      "id":5,
+      "id": 5,
       "title": "Gap",
       "price": 28.5,
       "description": "Acrylic",
-      "img":"https://i.pinimg.com/564x/ee/4a/b1/ee4ab1f7f16934a97e529cb9e45d19a8.jpg"
+      "img": "https://i.pinimg.com/564x/ee/4a/b1/ee4ab1f7f16934a97e529cb9e45d19a8.jpg"
     },
     {
       "id": 6,
       "title": "Field",
       "price": 20.5,
       "description": "Acrylic",
-      "img":"https://i.pinimg.com/564x/e8/54/04/e8540414017a0a7e204d5cbbe41b5c4d.jpg"
+      "img": "https://i.pinimg.com/564x/e8/54/04/e8540414017a0a7e204d5cbbe41b5c4d.jpg"
     },
     {
       "id": 7,
       "title": "Steps",
       "price": 32.5,
       "description": "Acrylic",
-      "img":"https://i.pinimg.com/474x/0e/11/c2/0e11c26d3ed0bcd0d63a27d8bcaa51e0.jpg"
+      "img": "https://i.pinimg.com/474x/0e/11/c2/0e11c26d3ed0bcd0d63a27d8bcaa51e0.jpg"
     },
     {
       "id": 8,
       "title": "Shade",
       "price": 32.5,
       "description": "Acrylic",
-      "img":"https://i.pinimg.com/474x/50/60/03/506003e78283edf67c5b6ebaef60f41c.jpg"
+      "img": "https://i.pinimg.com/474x/50/60/03/506003e78283edf67c5b6ebaef60f41c.jpg"
     }
-
+  ],
+  "orders": [
+    {
+      "firstname": "Wesley",
+      "lastname": "figaro",
+      "email": "valentinacomerci3@gmail.com",
+      "address": "via livio agresti",
+      "country": "Italy",
+      "state": "RM",
+      "zip": "00147",
+      "id": 2
+    },
+    {
+      "firstname": "valentina",
+      "lastname": "comerci",
+      "address": "via livio agresti 10",
+      "country": "Italy",
+      "state": "RM",
+      "zip": "00147",
+      "id": 3
+    }
   ]
-
 }
