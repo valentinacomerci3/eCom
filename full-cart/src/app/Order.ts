@@ -1,4 +1,7 @@
+import { Product } from "./Product";
+
 export interface Order {
+  total:number;
   ccname: string;
   cccvv: string;
   firstname: string;
@@ -10,4 +13,5 @@ export interface Order {
   address: string;
   ccnumber: string;
   ccexp: string;
+  products:Product[];
 }

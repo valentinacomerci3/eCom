@@ -3,6 +3,7 @@ import { CartService } from '../../cart/services/cart.service';
 import { Subscription } from 'rxjs';
 import { Order } from 'src/app/Order';
 import { CheckoutService } from '../services/checkout.service';
+import { Product } from 'src/app/Product';
 
 @Component({
   selector: 'app-checkout',
@@ -13,6 +14,8 @@ export class CheckoutComponent implements OnInit {
 
   orders: Order[] = [];
 
+
+  total!:number
   ccname!: string;
   cccvv!: string;
   firstname!: string;
@@ -24,6 +27,9 @@ export class CheckoutComponent implements OnInit {
   address!: string;
   ccnumber!: string;
   ccexp!: string;
+  products!: Product[] ;
+
+
 
   subscription!: Subscription;
   coGrandTotal!:number;
@@ -40,6 +46,7 @@ export class CheckoutComponent implements OnInit {
 
   onSubmit(){
       const newOrder = {
+        total:this.coAfterShipng,
         firstname: this.firstname,
         lastname: this.lastname,
         email: this.email,
@@ -51,6 +58,8 @@ export class CheckoutComponent implements OnInit {
         ccnumber: this.ccnumber,
         ccexp: this.ccexp,
         cccvv: this.cccvv,
+        products:this.cartService.items
+
       };
 
 
