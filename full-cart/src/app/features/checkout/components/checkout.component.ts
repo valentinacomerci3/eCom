@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { Order } from 'src/app/Order';
 import { CheckoutService } from '../services/checkout.service';
 import { Product } from 'src/app/Product';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-checkout',
@@ -44,6 +45,14 @@ export class CheckoutComponent implements OnInit {
     this.coAfterShipng=this.cartService.getTotalPrice()+this.coSFee
   }
 
+  sAl(){
+    Swal.fire(
+      'Thank you!',
+      'Your order has been submitted!',
+      'success'
+    )
+  }
+
   onSubmit(){
       const newOrder = {
         total:this.coAfterShipng,
@@ -64,6 +73,6 @@ export class CheckoutComponent implements OnInit {
 
 
       this.checkoutService.addOrder(newOrder).subscribe((newOrder) => this.orders.push(newOrder));
-      console.log(newOrder)
+      
     }
 }
